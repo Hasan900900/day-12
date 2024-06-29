@@ -3,10 +3,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
+    
 }
 
-form {
+/* form {
     display: flex;
     align-items: center;
     width: 90%;
@@ -38,10 +38,12 @@ button {
     margin: 10px 5px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 30px 30px 30px;
 }
 
 button:hover {
     background-color: #0056b3;
+        
 }
 
 p {
@@ -50,29 +52,54 @@ p {
 }
 
 /* Optional: Style specific cards differently */
+/* 
+
+
 .card1 {
     background-color: #f9f9f9;
+    box-shadow: 0 0 15px yellow;
+    border-radius: 30px 30px 30px;
 }
 
 .card2 {
     background-color: #e9f7ef;
+    box-shadow: 0 0 15px  yellow;
+    border-radius: 30px 30px 30px;
 }
 
 .card3 {
     background-color: #e8f0fe;
+    box-shadow: 0 0 15px yellow;
+    border-radius: 30px 30px 30px;
 }
 
 .card4 {
     background-color: #fff3cd;
+    box-shadow: 0 0 15px yellow;
+    border-radius: 30px 30px 30px;
 }
 .card5 {
     background-color: #93d6f5;
-}
+    box-shadow: 0 0 15px yellow;
+    border-radius: 30px 30px 30px;
+} */ */
 
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #007BFF;
-    width: 95%;
+    width: 100%;
 }
+.card1{
+    display: inline-block;
+    
+}
+
+
+/* .innercontainer input[type="submit"] {
+    color: #050;
+    font: bold 84% 'trebuchet ms', helvetica, sans-serif;
+    background-color: #fed;
+    border: 1px solid;
+    border-color: #696 #363 #363 #696;
+} */

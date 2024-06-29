@@ -279,4 +279,122 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </html>
 
  
+    card --dynamic
+      <!-- <form action="" method="post">
+            <!-- <?php foreach ($_SESSION['arr'] as $card => $counter): ?> -->
+                <!-- <div class="<?php echo $card; ?>" style="background-color: <?php echo random_color(); ?>;">
+                    <h1>I am <?php echo $card; ?></h1>
+                    <button type="submit" name="increment<?php echo $card; ?>">Click</button>
+                    <button type="submit" name="clear<?php echo $card; ?>">Clear</button>
+                    <p>Counter: <?php echo $counter; ?></p> -->
+                </div> -->
+
+                // fuction 
+                <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <?php
+    function display()
+    {
+        echo "<pre>";
+        print_r($_REQUEST);
+        print_r($_SERVER);
+        echo $_SERVER["SERVER_SOFTWARE"];
+        echo "<br>";
+        echo $_SERVER["SERVER_NAME"];
+        echo "<br>";
+        echo $_SERVER["SERVER_PORT"];
+        echo "<br>";
+        echo $_SERVER["REQUEST_SCHEME"];
+        echo "<br>";
+        echo $_SERVER["TMP"];
+    }
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        display();
+    }
+    ?>
+
+    <div class="card2">
+        <h3>banana</h3>
+        <h3>apple</h3>
+        <h3>mango</h3>
+        <h3>orange</h3>
+    </div>
+
+    <div class="card2">
+        <form action="" method="post">
+            <input id="banana" type="text" name="product" value="banana" style="display:none">
+            <input id="banana" type="text" name="qnty" value="1">
+            <input type="submit" value="banana">
+        </form>
+
+        <form action="" method="post">
+            <input id="apple" type="text" name="product" value="apple" style="display:none">
+            <input id="apple" type="text" name="qnty" value="2">
+            <input type="submit" value="apple">
+        </form>
+
+        <form action="" method="post">
+            <input id="mango" type="text" name="product" value="mango" style="display:none">
+            <input id="mango" type="text" name="qnty" value="3">
+            <input type="submit" value="mango">
+        </form>
+
+        <form action="" method="post">
+            <input id="orange" type="text" name="product" value="orange" style="display:none">
+            <input id="orange" type="text" name="qnty" value="4">
+            <input type="submit" value="orange">
+        </form>
+    </div>
+</body>
+
+</html>
+// unset($_SESSION["Array"]);
+    // unset($_SESSION["card"]);
+    //main//
+
+    // session_start();
+
+    // echo "<pre>";
+    // $_SESSION["card"][$_POST["product"]] = $_POST;
+    // print_r($_SESSION);
+
+
+
+    // print_r($_REQUEST);
+    // print_r($_POST);
+    // isset($_SESSION["card"]); 
+   
+       
     
+
+    
+    // print_r($_SERVER);
+    // print_r($_SESSION);
+    
+    // echo $_SERVER["SERVER_SOFTWARE"];
+    // echo "<br>";
+    
+    // echo $_SERVER["SERVER_NAME"];
+    // echo "<br>";
+    // echo $_SERVER["SERVER_PORT"];
+    // echo "<br>";
+    // echo $_SERVER["REQUEST_SCHEME"];
+    // echo "<br>";
+    // echo $_SERVER["TMP"];
+    
+
+
+
+    // die("Hasan");
+    // if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product']))
