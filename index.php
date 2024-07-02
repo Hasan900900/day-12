@@ -45,15 +45,15 @@
 
 
 
-    session_start();
-    // unset($_SESSION["card"]);
+    // session_start();
+    // // unset($_SESSION["card"]);
 
-    echo "<pre>";
-    $_SESSION["card"][$_POST["product"]]  = $_POST;
-    if (isset($_SESSION["card"][$_POST['product']])) {
-        $_SESSION[$_POST[""]]++;
-    }
-    print_r($_SESSION);
+    // echo "<pre>";
+    // $_SESSION["card"][$_POST["product"]]  = $_POST;
+    // if (isset($_SESSION["card"][$_POST['product']])) {
+    //     $_SESSION[$_POST[""]]++;
+    // }
+    // print_r($_SESSION);
 
 
 
@@ -123,18 +123,32 @@
 
 
     // die("Hasan");
+    if($_SERVER['REQUEST_METHOD']=="POST"){
+        $email=$_POST['email'];
+        $password=$_POST['password'];
+        echo $email;
+        echo "<br>";
+        echo $password;
+    }
     
     ?>
 
 
 
 
+<div class="container">
+    <form action="index.php" method="post">
+        <input type="text" name="email" value="ENTER YOUR EMAIL">
+        <input type="text" name="password" value="ENTER YOUR PASSWORD">
+        <input type="submit" value="SUBMIT">
+
+    </form>
+</div>
 
 
 
 
-
-
+<!-- 
     <div class="card2">
         <h3>banana</h3>
         <h3>apple</h3>
@@ -182,7 +196,7 @@
 
             <input type="submit" value="ADD TO CART">
         </form>
-    </div>
+    </div> -->
 
 
 
